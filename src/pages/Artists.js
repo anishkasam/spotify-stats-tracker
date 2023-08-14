@@ -206,7 +206,7 @@ function Artists() {
             plugins: {
               title: {
                 display: true,
-                text: "Artist Frequencies Across Top Tracks",
+                text: "Genre Frequencies Across Top Artists",
                 font: {
                   size: 20,
                   weight: 350,
