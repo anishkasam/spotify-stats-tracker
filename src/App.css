@@ -1,0 +1,167 @@
+*{margin: 0; padding: 0;}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7f8c8d;
+}
+
+.App {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+
+.header {
+  margin-top: 20vh;
+}
+
+.nav {
+  display: flex;
+  background: #27ae60;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: white;
+  opacity: 0.8;
+}
+
+.nav-link:focus {
+  color: white;
+}
+
+.home-button {
+  background-color: #27ae60;
+  border: none;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+}
+
+.home-button:hover {
+  background-color: #27ae60;
+  opacity: 0.8;
+}
+
+.home-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.album-cover {
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.page-heading {
+  margin-top: 50px;
+}
+
+.page-button {
+  color: white;
+  width: 20%;
+  border-radius: 5px 5px 0px 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-color: #7f8c8d;
+
+}
+
+.page-button:hover {
+  color: #95a5a6;
+}
+
+.not-focused {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.focused {
+  border-bottom: none;
+}
+
+.component {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+.component a {
+  color: white;
+  text-decoration: none;
+}
+
+.component a:hover {
+  color: #95a5a6;
+}
+
+.container {
+  width: 80vw;
+}
+
+.graph {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.prompt {
+  margin-top: 40px;
+}
+
+.input-group {
+  margin-top: 30px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.form-control {
+  background: black;
+  outline: none;
+  border-color: #bdc3c7;
+  color: white;
+  border-radius: 2.5px;
+}
+
+.form-control:focus {
+  background: black;
+  outline: none;
+  box-shadow: none;
+  border-color: #bdc3c7;
+  color: white;
+}
+
+.submit-button {
+  color: white;
+  background: #27ae60;
+  border-color: #27ae60;
+  border-radius: 0px 2.5px 2.5px 0px;
+  border: 11px 11px 11px 11px;
+}
+
+.submit-button:focus {
+  box-shadow: none;
+}
+
+.submit-button:hover {
+  background: #27ae60;
+  opacity: 0.8;
+  border-color: #27ae60;
+}
