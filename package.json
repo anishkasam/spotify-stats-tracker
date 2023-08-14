@@ -1,5 +1,6 @@
 {
   "name": "spotify-stats-tracker",
+  "homepage": "https://anishkasam.github.io/spotify-stats-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
