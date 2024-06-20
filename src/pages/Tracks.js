@@ -65,13 +65,20 @@ function Tracks() {
     var freq = Object.keys(dict).map(function(key) {
       return [key, dict[key]];
     });
+    console.log(freq);
 
     freq.sort(function(first, second) {
       return second[1] - first[1];
     });
 
-    setLabels([freq[1][0], freq[0][0], freq[2][0], freq[3][0], freq[4][0]])
-    setDataset([freq[1][1], freq[0][1], freq[2][1], freq[3][1], freq[4][1]])
+    try {
+        setLabels([freq[1][0], freq[0][0], freq[2][0], freq[3][0], freq[4][0]])
+        setDataset([freq[1][1], freq[0][1], freq[2][1], freq[3][1], freq[4][1]])
+    }
+    catch {
+        setLabels([freq[1][0], freq[0][0], freq[2][0], freq[3][0]])
+        setDataset([freq[1][1], freq[0][1], freq[2][1], freq[3][1]])
+    }
   }
 
   const setMed = async (e) => {
