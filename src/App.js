@@ -4,7 +4,7 @@ import Navbar from './components/navbar';
 
 function App() {
   const CLIENT_ID = "6514e113203a4d26b2a0762922f95b98"
-  const REDIRECT_URI = "http://localhost:3000"
+  const REDIRECT_URI = "https://spotify-stats-tracker.netlify.app/"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const SCOPE = "user-top-read%20user-read-recently-played"
   const RESPONSE_TYPE = "token" 
@@ -32,7 +32,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar></Navbar>
+      {!token ?
+        <div className="placeholder"></div>
+        :<Navbar></Navbar>
+      }
       <div className="container">
         <h1 className="header display-1">Spotify Stats Tracker</h1>
         <h2 className="fw-light">View your top artists & tracks and find new music!</h2>
